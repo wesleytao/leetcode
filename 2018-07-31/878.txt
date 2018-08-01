@@ -1,0 +1,37 @@
+class Solution { // bisection method
+public:
+    long long int get_gcd(long long int x, long long int y)
+        {
+            if (x % y == 0)
+                return y;
+            return get_gcd(y, x%y);
+        }
+    long long int GetPosition(long long int X, long long int A, long long int B)
+    {
+        return (X / A + X / B - X / (A / get_gcd(A, B) * B));
+    }
+    int nthMagicalNumber(int N, int A, int B) {
+        
+        long long int NN = N;
+        long long int AA = A;
+        long long int BB = B;
+        
+        long long int mod = 1000000007;
+        long long int gcd = get_gcd(AA,BB);
+        long long int lcm = AA / gcd * BB;
+        long long int L = 0;
+        long long int R = AA * NN;
+        long long int mid ;
+        while (L < R)
+        {
+            mid = (L + R) / 2;
+            if (GetPosition(mid, AA, BB) < NN)
+                L = mid + 1;
+            else if (GetPosition(mid, AA, BB) == NN && (mid % AA == 0 || mid % BB ==0))
+                return mid % mod ;
+            else
+                R = mid;
+        }
+        return L%mod;
+    }
+};
