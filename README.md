@@ -1,4 +1,4 @@
-# leetcode
+# Coding challenges
 A fierce, cruel battleground for noob coders.
 # Rule
 1. Create a new branch with format {FirstnameLastName} i.e. WesleyTao   Push to your own branch only  
