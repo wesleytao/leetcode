@@ -1,0 +1,32 @@
+class Solution {// bisection method
+public:
+    
+    int findKthNumber(int m, int n, int k) {
+        int LAns=1;
+        int RAns=m*n;
+        int Ans;
+        while (true)
+        {
+            int tmp=0;
+            int Appeared=0;
+            Ans=(LAns+RAns)/2;
+            for (int i=1;i<=m;i++)
+            {
+                if (Ans/i>n)
+                    tmp+=n;
+                else
+                {
+                    tmp+=Ans/i;
+                    if (Ans%i==0)
+                        Appeared++;
+                }
+            }
+            if (tmp<k)
+                LAns=Ans+1;
+            else if (tmp-Appeared>=k)
+                RAns=Ans;
+            else
+                return Ans;
+        }
+    }
+};
