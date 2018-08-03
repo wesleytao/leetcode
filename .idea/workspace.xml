@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7b39a41-9fd3-48c7-993b-2ef5cff6bfb3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/2018-08-01/121. Best Time to buy and sell a stock.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2018-08-01/189 Rotated Array.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2018-08-02/122.Best Time to buy and sell a stock.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2018-08-02/26. Remove Duplicated Array.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2018-08-01/66.Plus One.py" beforeDir="false" afterPath="$PROJECT_DIR$/2018-08-01/66.Plus One.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2018-08-01/121. Best Time to buy and sell a stock.py" beforeDir="false" afterPath="$PROJECT_DIR$/2018-08-02/121. Best Time to buy and sell a stock.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,25 +24,36 @@
       <file leaf-file-name="66.Plus One.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2018-08-01/66.Plus One.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="400">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="121. Best Time to buy and sell a stock.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/2018-08-01/121. Best Time to buy and sell a stock.py">
+      <file leaf-file-name="121. Best Time to buy and sell a stock.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2018-08-02/121. Best Time to buy and sell a stock.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="29" />
+            <state relative-caret-position="257">
+              <caret line="25" column="45" lean-forward="true" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TwoSum.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2018-06-03/TwoSum.py">
+      <file leaf-file-name="122.Best Time to buy and sell a stock.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2018-08-02/122.Best Time to buy and sell a stock.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-300" />
+            <state relative-caret-position="250">
+              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="26. Remove Duplicated Array.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/2018-08-02/26. Remove Duplicated Array.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -72,6 +82,9 @@
         <option value="$PROJECT_DIR$/2018-08-01/189 Rotated Array.py" />
         <option value="$PROJECT_DIR$/2018-08-01/121..py" />
         <option value="$PROJECT_DIR$/2018-08-01/121. Best Time to buy and sell a stock.py" />
+        <option value="$PROJECT_DIR$/2018-08-02/121. Best Time to buy and sell a stock.py" />
+        <option value="$PROJECT_DIR$/2018-08-02/122.Best Time to buy and sell a stock.py" />
+        <option value="$PROJECT_DIR$/2018-08-02/26. Remove Duplicated Array.py" />
       </list>
     </option>
   </component>
@@ -111,6 +124,11 @@
               <item name="Leetcode" type="462c0819:PsiDirectoryNode" />
               <item name="2018-08-01" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Leetcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="2018-08-02" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -127,6 +145,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Wesle\Documents\GitHub\Leetcode\2018-08-02" />
+      <recent name="C:\Users\Wesle\Documents\GitHub\Leetcode" />
       <recent name="C:\Users\Wesle\Documents\GitHub\leetcode" />
     </key>
   </component>
@@ -156,7 +176,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2018-08-01/121. Best Time to buy and sell a stock.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Wesle\Documents\GitHub\Leetcode\2018-08-02\121. Best Time to buy and sell a stock.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -218,13 +238,13 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.10753475" side_tool="true" visible="true" weight="0.3626943" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.10753475" side_tool="true" visible="true" weight="0.34326425" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.89246523" visible="true" weight="0.3626943" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.89246523" weight="0.3626943" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24359912" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24359912" />
       <window_info anchor="right" id="R Packages" order="3" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="R Graphics" order="3" />
@@ -258,64 +278,33 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/156.MaximumProductArray.py">
+    <entry file="file://$PROJECT_DIR$/2018-08-01/66.Plus One.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+        <state relative-caret-position="400">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/156.MaximumProductArray.py">
+    <entry file="file://$PROJECT_DIR$/2018-06-03/TwoSum.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018-08-02/121. Best Time to buy and sell a stock.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state>
+          <caret selection-end-line="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/156.MaximumProductArray.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/156.MaximumProductArray.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/156.MaximumProductArray.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/156.MaximumProductArray.py" />
+    <entry file="file://$PROJECT_DIR$/156.MaximumProductArray.py" />
+    <entry file="file://$PROJECT_DIR$/156.MaximumProductArray.py" />
+    <entry file="file://$PROJECT_DIR$/156.MaximumProductArray.py" />
+    <entry file="file://$PROJECT_DIR$/156.MaximumProductArray.py" />
     <entry file="file://$PROJECT_DIR$/6.13/twosum.ipynb" />
-    <entry file="file://$PROJECT_DIR$/TwoSum.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/TwoSum.py" />
     <entry file="file://$PROJECT_DIR$/6.13/.ipynb_checkpoints/twosum-checkpoint.ipynb" />
-    <entry file="file://$PROJECT_DIR$/ThreeSomeClosest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="49" lean-forward="true" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/156.MaximumProductArray.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ThreeSomeClosest.py" />
+    <entry file="file://$PROJECT_DIR$/156.MaximumProductArray.py" />
     <entry file="file://$PROJECT_DIR$/2018-06-03/156.MaximumProductArray.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -334,9 +323,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/2018-06-03/TwoSum.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-300" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/2018-08-01/189 Rotated Array.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -345,23 +332,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2018-08-01/119 Pascal's Triangle.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2018-08-01/121..py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/2018-08-01/119 Pascal's Triangle.py" />
+    <entry file="file://$PROJECT_DIR$/2018-08-01/121..py" />
     <entry file="file://$PROJECT_DIR$/2018-08-01/66.Plus One.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="400">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2018-08-01/121. Best Time to buy and sell a stock.py">
+    <entry file="file://$PROJECT_DIR$/2018-08-02/121. Best Time to buy and sell a stock.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="29" />
+        <state relative-caret-position="257">
+          <caret line="25" column="45" lean-forward="true" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018-08-02/122.Best Time to buy and sell a stock.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018-08-02/26. Remove Duplicated Array.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
         </state>
       </provider>
     </entry>
