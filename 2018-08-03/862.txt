@@ -1,0 +1,59 @@
+class Solution {
+public:
+    int n;
+    int sum[50005];
+    int Queue[50005];
+    int Queue_pos[50005];
+    int QL, QR;
+    int Ans;
+    void ADD(int X)
+    {
+        if (sum[X] >= Queue[QR])
+        {
+            QR ++;
+            Queue[QR] = sum[X];
+            Queue_pos[QR] = X;
+            return;
+        }
+        int L = QL;
+        int R = QR;
+        int mid;
+        while (L < R)
+        {
+            mid  = (L + R) / 2;
+            if (sum[X] >= Queue[mid])
+                L = mid + 1;
+            else
+                R = mid;
+        }
+        QR = R;
+        Queue[QR] = sum[X];
+        Queue_pos[QR] = X;
+    }
+    void DELETE(int K)
+    {
+        while (Queue[QR] - Queue[QL] >= K)
+        {
+            if (Ans > Queue_pos[QR] - Queue_pos[QL])
+                Ans = Queue_pos[QR] - Queue_pos[QL];
+            QL ++;
+        }
+    }
+    int shortestSubarray(vector<int>& A, int K) {
+        
+        n = A.size();
+        sum[0] = 0 ;
+        for (int i = 0; i <n; i ++)
+            sum[i+1] = sum[i] + A[i];
+        QL = 0;
+        QR = 0;
+        Ans = n + 1;
+        
+        for (int i = 0; i <= n ; i ++)
+        {
+            ADD(i);
+            DELETE(K);
+        }
+        return (Ans > n ? -1 : Ans);
+    }
+};
