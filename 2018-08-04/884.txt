@@ -1,0 +1,65 @@
+class Solution {
+public:
+    int n=0;
+    int ch_len[100];
+    long long int mul[100];
+    string ch[100];
+    long long int total[100];
+    long long int loop[100];
+    long long int ERROR=10000000000000LL;
+    void Add (string S, long long int num)
+    {
+        n++;
+        ch[n]=S;
+        mul[n] = num;
+    }
+    void Decode(string S,int X)
+    {
+        if (X == S.length())
+            return;
+        int Y = 1;
+        while (X + Y < S.length() && S[X+Y] >= 'a' && S[X+Y] <= 'z')
+            Y++;
+        if (X + Y == S.length())
+        {
+            Add(S.substr(X, Y), 1);
+            return;
+        }
+        long long Z = 1;
+        int pos = X + Y;
+        while (pos < S.length() && S[pos] >='0' && S[pos] <= '9')
+        {
+            Z =Z*(S[pos] - '0');
+            if (Z >ERROR)
+                Z=ERROR;
+            pos++;
+        }
+        Add(S.substr(X,Y), Z);
+        Decode(S, pos);
+    }
+    string GetAns(int x, long long int pos)
+    {
+        long long int pos_after_loop = pos % loop[x];
+        if (pos_after_loop ==0)
+        	pos_after_loop = loop[x];
+        if (pos_after_loop > total[x -1])
+            return ch[x].substr(pos_after_loop - total[x -1] - 1,1);
+        return GetAns(x-1, pos_after_loop);
+    }
+    string decodeAtIndex(string S, int K) {
+        
+        Decode(S,0);
+        long long int Kpos = K;
+        long long int tmp=0;
+        for (int i=1;i<=n;i++)
+        {
+            loop[i] = tmp + ch[i].length();
+            tmp = mul[i] * (tmp + ch[i].length() );
+            total[i]=tmp;
+        }
+        
+        for (int i=1;i<=n;i++)
+            if (total[i] >= Kpos)
+                return GetAns(i, Kpos);
+    }
+};
