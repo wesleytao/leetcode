@@ -1,0 +1,27 @@
+class Solution {
+public:
+    bool isNumber(string s) {
+        
+    string t = s;
+    const char *ch = t.c_str();
+    int i = 0;
+    for(; ch[i] == ' '; i++) {}
+    if(ch[i] == '+' || ch[i] == '-') i++;     
+    int n_nm, n_pt;
+    for(n_nm=0, n_pt=0; (ch[i]<='9' && ch[i]>='0') || ch[i]=='.'; i++)
+        ch[i] == '.' ? n_pt++:n_nm++;       
+    if(n_pt>1 || n_nm<1)
+        return false;
+    if(ch[i] == 'e') {
+        i++;
+        if(ch[i] == '+' || ch[i] == '-') i++; 
+        int n_nm = 0;
+        for(; ch[i]>='0' && ch[i]<='9'; i++, n_nm++) {}
+        if(n_nm<1)
+            return false;
+    }
+    for(; ch[i] == ' '; i++) {}
+    
+    return ch[i]==0; 
+    }
+};
