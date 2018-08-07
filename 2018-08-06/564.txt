@@ -1,0 +1,134 @@
+class Solution {
+public:
+    long long int ans = 0;
+    long long int min_diff = 0;
+    int len;
+    long long int Ori_n;
+    long long int StringToInt(string s)
+    {
+        int len = s.length();
+        long long int ans = 0;
+        for (int i = 0; i < len; i ++)
+            ans = ans * 10 + s[i] - '0';
+        return ans;
+    }
+    long long int diff(long long int A, long long int B)
+    {
+        return A>B ? (A - B): (B - A);
+    }
+    bool Check(int k, string s)
+    {
+        string t = s;
+        string r = s;
+        for (int i = k; i < len; i++)
+        {
+            t[i]='0';
+            r[i]='9';
+        }
+        long long int this_t = StringToInt(t);
+        long long int this_r = StringToInt(r);
+        long long int t_diff = diff(Ori_n, this_t);
+        long long int r_diff = diff(Ori_n, this_r);
+        if (t_diff >= min_diff && this_t > Ori_n)
+            return false;
+        if (r_diff >= min_diff && this_r < Ori_n)
+            return false;
+        return true;
+    }
+    void Search(int k, string s)
+    {
+        if (!Check(k, s))
+            return;
+        if (k >= (len + 1) / 2)
+        {
+            string t = s;
+            for (int i = (len+1) / 2; i < len; i ++)
+                t[i] = t[len - 1 - i];
+            long long int this_ans = StringToInt(t);
+            long long int this_diff = diff(Ori_n, this_ans);
+            if (this_diff == 0)
+                return;
+            if (this_diff < min_diff || (this_diff == min_diff && this_ans < ans))
+            {
+                min_diff = this_diff;
+                ans = this_ans;
+            }
+            return;
+        }
+        
+        for (int i = 0; i <= 9; i ++)
+        {
+            char digit = s[k];
+            s[k] = '0' + i;
+            Search(k+1, s);
+            s[k] = digit;
+        }
+    }
+    string IntToAnswer(long long int X, string n)
+    {
+        string output = n;
+        //Check one digit
+        if (n.length()==1)
+        {
+            output[0] = n[0] - 1;
+            return output;
+        }
+        //Check 1000000 -> 999999, 1000001 -> 999999 (change digit number)
+        bool flag99999 = false;
+        if (n[0] == '1')
+        {
+            for (int i = 1; i < len - 1; i++)
+                if (n[i] != '0')
+                    flag99999 = true;
+            if (!flag99999 && n[len-1] >='0' && n[len-1] <= '1')
+            {
+                for (int i = 0; i < len; i++)
+                    output[i] = '9';
+                output = output.substr(0, len - 1);
+                return output;
+            }
+        }
+        //Check 99999 -> 1000001 (change digit number)
+        flag99999 = false;
+        for (int i = 0; i < len; i++)
+            if (n[i] != '9')
+                flag99999 = true;
+        if (!flag99999)
+        {
+            output[0] = '1';
+            for (int i = 1; i < len; i++)
+                output[i] = '0';
+            output = output + '1';
+            return output;
+        }
+        
+        
+        for (int i = 0; i < len; i++)
+        {
+            output[len - 1- i] = X % 10 + '0';
+            X = X/10;
+        }
+        return output;
+    }
+    string nearestPalindromic(string n) {
+        
+        
+        long long int First_ans = 0;
+        ans = 0;
+        len = n.length();
+        Ori_n = 0;
+        min_diff = 2;
+        for (int i = 0; i < len; i ++)
+            Ori_n = 10 * Ori_n + n[i] - '0';
+        for (int i = len / 2; i < len; i ++)
+            min_diff = 10 * min_diff;
+        //min_diff = Ori_n;
+        
+        Search(0, n);
+        //string m="70";
+        //m[1] = '0' + Check(1, m);
+        //m[3] = '0' + Check(2, m);
+        //return IntToAnswer(diff(StringToInt(m), Ori_n),n);
+        return IntToAnswer(ans,n);
+    }
+};
