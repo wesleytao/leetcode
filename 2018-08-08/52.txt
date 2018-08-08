@@ -1,0 +1,38 @@
+class Solution {
+public:
+    
+    bool hor[20];
+    bool ver[20];
+    bool diag_m[42];
+    bool diag_p[42];
+    bool mark[20][20];
+    int ans = 0;
+    
+    void Search(int i, int n)
+    {
+        if (i > n)
+        {
+            ans ++;
+            return;
+        }
+        for (int j = 1; j <= n; j ++)
+            if (!mark[i][j] && !ver[j] && !diag_m[i - j + n] && !diag_p[i + j])
+            {
+                mark[i][j]=true;
+                ver[j]=true;
+                diag_m[i - j + n]=true;
+                diag_p[i + j] = true;
+                Search(i+1, n);
+                mark[i][j]=false;
+                ver[j]=false;
+                diag_m[i - j + n]=false;
+                diag_p[i + j] = false;
+
+            }
+    }
+    int totalNQueens(int n) {
+        
+        Search(1,n);
+        return ans;
+    }
+};
