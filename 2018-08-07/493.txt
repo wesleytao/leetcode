@@ -1,0 +1,46 @@
+class Solution { //merge sort
+public:
+    void merge(vector<int>& A, int l, int mid, int r)
+    {
+        int nL = mid - l + 1;
+        int nR = r - mid ;
+        int AL[nL];
+        int AR[nR];
+        for (int i = 0; i < nL; i++)
+            AL[i] = A[l + i];
+        for (int j = 0; j < nR; j++)
+            AR[j] = A[mid + 1 + j];
+        int i = 0;
+        int j = 0;
+        for (int k = l; k <= r; k++) {
+            if (j >= nR || (i < nL && AL[i] <= AR[j]))
+                A[k] = AL[i++];
+            else
+                A[k] = AR[j++];
+        }
+    }
+
+    int mergesort(vector<int>& A, int l, int r)
+    {
+        if (l >= r)
+            return 0;
+        int mid = (l + r) / 2;
+        int count = mergesort(A, l, mid) + mergesort(A, mid + 1, r);
+        int j = mid + 1;
+        for (int i = l; i <= mid; i++) {
+            while (j <= r && A[i] > 2LL * A[j])
+                j++;
+            count += j - mid - 1;
+        }
+        merge(A, l, mid, r);
+        return count;
+
+    }
+
+    int reversePairs(vector<int>& nums)
+    {
+        return mergesort(nums, 0, nums.size() - 1);
+    }
+
+
+};
