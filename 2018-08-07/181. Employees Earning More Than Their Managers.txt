@@ -1,0 +1,8 @@
+181. Employees Earning More Than Their Managers
+# Write your MySQL query statement below
+select Name as Employee
+from Employee join 
+(select Id as ManagerId,Salary as ManagerSalary from Employee where Id in (select distinct(ManagerId)
+                                                                              from Employee)) as T2 
+On T2.ManagerID = Employee.ManagerID
+where Salary> ManagerSalary
